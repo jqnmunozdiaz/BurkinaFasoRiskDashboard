@@ -2,8 +2,8 @@
 # Replace YOUR-DOMAIN.COM with your actual domain
 
 param(
-    [Parameter(Mandatory=$true)]
-    [string]$Domain
+  [Parameter(Mandatory = $true)]
+  [string]$Domain
 )
 
 Write-Host "Setting up custom domain: $Domain" -ForegroundColor Green
@@ -11,10 +11,10 @@ Write-Host "Setting up custom domain: $Domain" -ForegroundColor Green
 # Step 1: Map domain to Cloud Run service
 Write-Host "`nStep 1: Creating domain mapping..." -ForegroundColor Cyan
 gcloud beta run domain-mappings create `
-  --service=so-dashboard `
+  --service=burkina-risk-dashboard `
   --domain=$Domain `
   --region=us-central1 `
-  --project=wbso-dashboard
+  --project=burkinafasoriskdashboard
 
 # Step 2: Get DNS records that need to be configured
 Write-Host "`nStep 2: Getting DNS configuration..." -ForegroundColor Cyan
@@ -22,7 +22,7 @@ Write-Host "Copy these DNS records to your domain registrar:" -ForegroundColor Y
 
 gcloud beta run domain-mappings describe $Domain `
   --region=us-central1 `
-  --project=wbso-dashboard `
+  --project=burkinafasoriskdashboard `
   --format="table(status.resourceRecords[].name,status.resourceRecords[].type,status.resourceRecords[].rrdata)"
 
 Write-Host "`n✅ Domain mapping created!" -ForegroundColor Green

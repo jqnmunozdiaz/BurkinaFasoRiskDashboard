@@ -162,7 +162,7 @@ def create_dashboard_layout():
                         ], className="hero-description"),
                         html.P([
                             "For detailed subnational analysis and city-specific data, visit the ",
-                            html.A("city-level platform", href="https://urban-risk-observatory.web.app/", target="_blank", style={'color': "#358EDD", 'text-decoration': 'none', 'font-weight': 'bold'}),
+                            html.A("city-level platform", href="https://urban-risk-observatory.web.app/burkina_faso.html", target="_blank", style={'color': "#358EDD", 'text-decoration': 'none', 'font-weight': 'bold'}),
                             "."
                         ], className="hero-description"),
                     ], className="hero-content"),
@@ -193,7 +193,7 @@ def create_dashboard_layout():
                             ], className="filter-dropdown-container"),
                         ], className="filter-control-group"),
                     ], className="filter-card"),
-                    create_city_platform_button("https://urban-risk-observatory.web.app/"),
+                    create_city_platform_button("https://urban-risk-observatory.web.app/burkina_faso.html"),
                 ], className="filter-inner"),
             ], className="filter-section"),
 

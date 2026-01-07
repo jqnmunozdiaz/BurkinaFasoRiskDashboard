@@ -1,12 +1,14 @@
 # Cloud Run Deployment Script
 # Refresh PATH to include gcloud
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
 
 Write-Host "Starting deployment to Google Cloud Run..." -ForegroundColor Green
 Write-Host "This will take 5-10 minutes. Please wait..." -ForegroundColor Yellow
 
 # Deploy to Cloud Run
-gcloud run deploy so-dashboard `
+# Deploy to Cloud Run
+gcloud config set project burkinafasoriskdashboard
+gcloud run deploy burkina-risk-dashboard `
   --source . `
   --platform managed `
   --region us-central1 `
@@ -15,7 +17,8 @@ gcloud run deploy so-dashboard `
   --memory 2Gi `
   --cpu 2 `
   --timeout 300 `
-  --max-instances 10 `
+  --min-instances 0 `
+  --max-instances 5 `
   --set-env-vars ENVIRONMENT=production
 
 Write-Host "`nDeployment complete!" -ForegroundColor Green
