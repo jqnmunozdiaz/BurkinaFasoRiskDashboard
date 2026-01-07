@@ -207,16 +207,16 @@ def create_city_platform_button(href: str = "https://urban-risk-observatory.web.
         href (str): URL to navigate to when the button is clicked.
 
     Returns:
-        html.A: Anchor-wrapped button linking to the provided href.
+        html.A: Anchor styled as a button linking to the provided href.
     """
-    return html.A([
-        dbc.Button(
-            [html.I(className="fas fa-city me-2"), "City-level Platform"],
-            color="primary",
-            size="sm",
-            className="download-data-button",
-        )
-    ], href=href, target="_blank", rel="noopener noreferrer", className="city-platform-button-container")
+    return html.A(
+        [html.I(className="fas fa-city me-2"), "City-level Platform"],
+        href=href,
+        target="_blank",
+        rel="noopener noreferrer",
+        className="contact-us-button",
+        style={"textDecoration": "none"}
+    )
 
 
 def create_absolute_relative_selector(radio_id):

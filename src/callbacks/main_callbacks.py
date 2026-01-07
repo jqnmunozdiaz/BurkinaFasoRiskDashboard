@@ -35,16 +35,7 @@ def register_main_callbacks(app):
     )
     def update_header_title(selected_country):
         """Update header title based on selected country"""
-        try:
-            if selected_country:
-                # Load country and region mapping
-                countries_and_regions_dict = load_subsaharan_countries_and_regions_dict()
-                country_name = countries_and_regions_dict.get(selected_country, selected_country)
-                return f"SSA Risk & Urbanization Dashboard | {country_name}"
-            else:
-                return "SSA Risk & Urbanization Dashboard"
-        except Exception:
-            return "SSA Risk & Urbanization Dashboard"
+        return "Burkina Faso Risk Dashboard"
 
     @app.callback(
         Output('tab-content', 'children'),

@@ -21,7 +21,7 @@ def create_dashboard_layout():
                 html.Div([
                     html.H2(
                         id="dynamic-header-title",
-                        children="Sub-Saharan Africa DRM Dashboard",
+                        children="Burkina Faso Risk Dashboard",
                         className="header-title",
                     )
                 ], className="header-title-container"),
@@ -29,6 +29,7 @@ def create_dashboard_layout():
                 html.Div(className="header-spacer"),
 
                 html.Div([
+                    create_city_platform_button("https://urban-risk-observatory.web.app/burkina_faso.html"),
                     html.Button(
                         "Disclaimer",
                         id="disclaimer-button",
@@ -149,9 +150,9 @@ def create_dashboard_layout():
                 html.Div([
                     html.Div([
                         html.H1("Disaster Risk & Urbanization Analytics Dashboard", className="hero-title"),
-                        html.P("Sub-Saharan Africa", className="hero-subtitle"),
+                        html.P("Burkina Faso", className="hero-subtitle"),
                         html.P([
-                            html.B("This platform enables users to analyze disaster risk and urbanization trends across Sub-Saharan Africa. "),
+                            html.B("This platform enables users to analyze disaster risk and urbanization trends in Burkina Faso. "),
                             "Combining historical disaster data with urban growth projections and climate scenarios, it supports evidence-based "
                             "planning for disaster risk reduction and sustainable urban development."
                         ], className="hero-description"),
@@ -187,13 +188,12 @@ def create_dashboard_layout():
                                         {"label": country["name"], "value": country["code"]}
                                         for country in get_countries_with_regions()
                                     ],
-                                    value=get_subsaharan_countries()[0]["code"],
+                                    value="BFA",
                                     placeholder="Select a country...",
                                 )
                             ], className="filter-dropdown-container"),
-                        ], className="filter-control-group"),
+                        ], className="filter-control-group", style={"display": "none"}),
                     ], className="filter-card"),
-                    create_city_platform_button("https://urban-risk-observatory.web.app/burkina_faso.html"),
                 ], className="filter-inner"),
             ], className="filter-section"),
 
@@ -271,7 +271,7 @@ def create_methodological_note_layout():
             html.Div([
                 html.Div([
                     html.H2(
-                        "Sub-Saharan Africa DRM Dashboard | Methodological Note",
+                        "Burkina Faso Risk Dashboard | Methodological Note",
                         className="header-title",
                     )
                 ], className="header-title-container"),

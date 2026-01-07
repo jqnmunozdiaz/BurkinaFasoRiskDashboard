@@ -27,7 +27,7 @@ app = dash.Dash(
     meta_tags=[
         {
             'name': 'description',
-            'content': 'Interactive dashboard for analyzing disaster risk management, urbanization trends, and flood exposure across Sub-Saharan Africa. Explore historical disasters, urban population projections, and climate change impacts.'
+            'content': 'Interactive dashboard for analyzing disaster risk management, urbanization trends, and flood exposure in Burkina Faso. Explore historical disasters, urban population projections, and climate change impacts.'
         },
         {
             'name': 'keywords',
@@ -35,11 +35,11 @@ app = dash.Dash(
         },
         {
             'property': 'og:title',
-            'content': 'Sub-Saharan Africa DRM Dashboard'
+            'content': 'Burkina Faso Risk Dashboard'
         },
         {
             'property': 'og:description',
-            'content': 'Interactive dashboard for analyzing disaster risk management and urbanization trends across Sub-Saharan Africa'
+            'content': 'Interactive dashboard for analyzing disaster risk management and urbanization trends in Burkina Faso'
         },
         {
             'property': 'og:type',
@@ -98,7 +98,7 @@ def serve_sitemap():
     return send_from_directory('assets', 'sitemap.xml')
 
 # Set the title
-app.title = "Sub-Saharan Africa DRM Dashboard"
+app.title = "Burkina Faso Risk Dashboard"
 
 # Create the World Bank-styled layout
 app.layout = create_world_bank_layout()
