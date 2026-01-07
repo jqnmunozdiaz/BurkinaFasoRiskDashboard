@@ -1,0 +1,7 @@
+# Minimal dependencies to run the dashboard
+dash
+dash-bootstrap-components
+dash-leaflet
+plotly
+pandas
+requests
