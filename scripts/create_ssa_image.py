@@ -87,6 +87,6 @@ plt.tight_layout()
 
 # Save the image as SVG with transparent background
 output_path.mkdir(parents=True, exist_ok=True)
-output_file = output_path / "SSA-dashboard.svg"
+output_file = output_path / "BFA-dashboard.svg"
 plt.savefig(output_file, format='svg', bbox_inches='tight', 
             facecolor='none', edgecolor='none')
