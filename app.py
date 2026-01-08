@@ -1,5 +1,5 @@
 """
-Sub-Saharan Africa Disaster Risk Management Dashboard
+Burkina Faso Disaster Risk Dashboard
 Main application entry point for the Dash application.
 """
 
@@ -31,7 +31,7 @@ app = dash.Dash(
         },
         {
             'name': 'keywords',
-            'content': 'disaster risk management, Sub-Saharan Africa, urbanization, flood exposure, climate change, World Bank, GFDRR, EM-DAT, urban planning'
+            'content': 'disaster risk management, Burkina Faso, urbanization, flood exposure, climate change, World Bank, GFDRR, EM-DAT, urban planning'
         },
         {
             'property': 'og:title',
@@ -47,7 +47,7 @@ app = dash.Dash(
         },
         {
             'property': 'og:url',
-            'content': 'https://urbanization-risk-dashboard.site/'
+            'content': 'https://burkina-risk-dashboard-932589351828.us-central1.run.app/'
         },
         {
             'name': 'viewport',
@@ -59,7 +59,7 @@ app = dash.Dash(
         },
         {
             'rel': 'canonical',
-            'href': 'https://urbanization-risk-dashboard.site/'
+            'href': 'https://burkina-risk-dashboard-932589351828.us-central1.run.app/'
         }
     ]
 )

@@ -1,9 +1,9 @@
-# Methodological Note: Sub-Saharan Africa DRM Dashboard
+# Methodological Note
 
-**Last Updated:** November 2025
+**Last Updated:** January 2026
 
 ## Overview
-This dashboard integrates data from multiple authoritative sources to provide a comprehensive view of disaster risk, urbanization trends, and climate exposure in Sub-Saharan Africa. This note details the data sources, processing methodologies, and known limitations for each component of the dashboard. Users should be aware that, because the dashboard draws on multiple data sources, some estimates may not align perfectly.
+This dashboard integrates data from multiple authoritative sources to provide a comprehensive view of disaster risk, urbanization trends, and climate exposure in Burkina Faso. This note details the data sources, processing methodologies, and known limitations for each component of the dashboard. Users should be aware that, because the dashboard draws on multiple data sources, some estimates may not align perfectly.
 
 ---
 
@@ -14,7 +14,7 @@ This dashboard integrates data from multiple authoritative sources to provide a 
 *   **Access Date:** October 2025.
 
 ### Methodology
-*   **Scope:** The analysis includes all Sub-Saharan African countries (as defined by the World Bank).
+*   **Scope:** The analysis includes Burkina Faso.
 *   **Disaster Types:** Filtered to include only relevant natural hazard categories (e.g., Drought, Flood, Storm, Earthquake, Landslide, Wildfire, Extreme Temperature).
 *   **Metrics:**
     *   **Total Deaths:** Number of people who lost their lives.
